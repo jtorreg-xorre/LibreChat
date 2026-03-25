@@ -1,0 +1,25 @@
+version: "1.1.1"
+
+# Configuración de los Endpoints
+endpoints:
+  custom:
+    - name: "OpenRouter"
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default: ["anthropic/claude-3.5-sonnet", "anthropic/claude-3-opus", "anthropic/claude-3-haiku"]
+        fetch: true
+      titleConvo: true
+      titleModel: "anthropic/claude-3-haiku"
+      # Esto hace que se vean los logos originales
+      iconURL: "https://openrouter.ai/static/favicon.png"
+
+# Si quieres que aparezcan con nombres bonitos en el selector:
+modelConfig:
+  models:
+    - name: "anthropic/claude-3.5-sonnet"
+      label: "Claude 3.5 Sonnet"
+    - name: "anthropic/claude-3-opus"
+      label: "Claude 3 Opus"
+    - name: "anthropic/claude-3-haiku"
+      label: "Claude 3 Haiku"
