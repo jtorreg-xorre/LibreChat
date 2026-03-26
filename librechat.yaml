@@ -13,6 +13,8 @@ endpoints:
       titleModel: "anthropic/claude-3-haiku"
       # Esto hace que se vean los logos originales
       iconURL: "https://openrouter.ai/static/favicon.png"
+      dropParams: ["stop"]
+      modelDisplayLabel: "OpenRouter"
 
 # Si quieres que aparezcan con nombres bonitos en el selector:
 modelConfig:
